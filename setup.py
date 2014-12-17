@@ -19,12 +19,12 @@ setup(name='talon',
       include_package_data=True,
       zip_safe=True,
       install_requires=[
-          #  "lxml",  # ignored, installed with apt-get install python-lxml
-          "regex",
-          "chardet",
-          "dnspython",
+          "lxml==2.3.3",
+          "regex==0.1.20110315",
+          "chardet==1.0.1",
+          "dnspython==1.11.1",
           "html2text",
-          "nose",
+          "nose==1.2.1",
           "mock",
           "coverage",
           "flanker"
