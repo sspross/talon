@@ -99,8 +99,7 @@ def cd(directory):
         os.chdir(curdir)
 
 
-if __name__ == '__main__':
-    if len(sys.argv) > 1 and sys.argv[1] in ['develop', 'install']:
-        enforce_executable('curl', 'sudo aptitude install curl')
-
-        install_pyml()
+# if __name__ == '__main__':
+#     if len(sys.argv) > 1 and sys.argv[1] in ['develop', 'install']:
+#         enforce_executable('curl', 'sudo aptitude install curl')
+#         install_pyml()
