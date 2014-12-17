@@ -1,7 +1,12 @@
 from talon.quotations import register_xpath_extensions
-from talon import signature
 
 
 def init():
     register_xpath_extensions()
-    signature.initialize()
+    try:
+        import PyML
+    except:
+        pass
+    else:
+        from talon import signature
+        signature.initialize()
